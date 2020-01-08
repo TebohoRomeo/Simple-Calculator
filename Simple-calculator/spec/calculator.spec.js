@@ -10,7 +10,7 @@ describe("Add function", function() {
     })
 
     it("adds two positive numbers and return sum.", function(){
-        expect(calculator.add(4,5)).toBe(9)
+        expect(calculator.add(4,5)).toBe(9);
     })
 
     it("Adds multiple numbers and returns a sum", function(){
@@ -22,10 +22,14 @@ describe("Add function", function() {
 
 describe("Multiply function", function() {
     it("Multiples two number and returns a product", function() {
-        expect(calculator.multiply(1,2)).toBe(2)
+        expect(calculator.multiply(1,2)).toBe(2);
     })
 
     it("multiply multiple numbers an returns a product", function(){
-        expect(calculator.multiply(1,2,3,4)).toBe(24)
+        expect(calculator.multiply(1,2,3,4)).toBe(24);
+    })
+
+    fit("Multiples two number and returns a product", function(){
+        expect(calculator.multiply(-1,3)).toBe(-3);
     })
 })
